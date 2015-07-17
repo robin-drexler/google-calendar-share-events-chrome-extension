@@ -5,7 +5,7 @@
         "256": "/img/icons/icon_256.png"
     },
 
-    "description": "When openinh an event page in Google Calendar this extension will turn the URL in the adress bar into an adress that you can share with others (that have also access to this particular event)",
+    "description": "Adds a button to a Google Calendar event which copies an URL to the clipboard that you can actually share with others.",
     "content_scripts": [
         {
             "matches": ["https://www.google.com/calendar/*"],
