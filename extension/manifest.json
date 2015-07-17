@@ -1,26 +1,21 @@
 {
-    "name": "My awesome extension :)",
-    "version": "0.1",
+    "name": "Google Calendar Share Event",
+    "version": "0.0.1",
     "icons": {
-        "16": "/img/icons/icon_16.png",
-        "48": "/img/icons/icon_48.png",
-        "128": "/img/icons/icon_128.png"
+        "256": "/img/icons/icon_256.png"
     },
 
-    "description": "Yay, I'm so useless.",
-    "permissions": [
-        "geolocation"
-    ],
-
+    "description": "When openinh an event page in Google Calendar this extension will turn the URL in the adress bar into an adress that you can share with others (that have also access to this particular event)",
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
+            "matches": ["https://www.google.com/calendar/*"],
             "js": [
-                    "/js/external/jquery.js",
                     "/js/content_script.js"
                 ]
         }
     ],
-
-    "manifest_version": 2
+    "manifest_version": 2,
+    "permissions": [
+        "clipboardWrite"
+    ]
 }
