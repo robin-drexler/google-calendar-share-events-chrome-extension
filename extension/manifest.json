@@ -1,6 +1,6 @@
 {
     "name": "Google Calendar Share Event",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icons": {
         "256": "/img/icons/icon_256.png"
     },
@@ -8,7 +8,10 @@
     "description": "Adds a button to a Google Calendar event which copies an URL to the clipboard that you can actually share with others.",
     "content_scripts": [
         {
-            "matches": ["https://www.google.com/calendar/*"],
+            "matches": [
+              "https://www.google.com/calendar/*",
+              "https://calendar.google.com/*"
+            ],
             "js": [
                     "/js/content_script.js"
                 ]
